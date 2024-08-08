@@ -4,7 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import { io } from 'socket.io-client';
 import 'leaflet/dist/leaflet.css';
 
-const socket = io('https://socket-backend-gray.vercel.app/'); // Adjust this URL if needed
+const socket = io('https://socket-backend-gray.vercel.app'); // Adjust this URL if needed
 window.socket = socket;
 const LocationMarker = ({ position, userId }) => {
   console.log('Rendering Marker for:', userId, 'at position:', position);
